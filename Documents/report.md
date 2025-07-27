@@ -2,90 +2,118 @@
 
 ## 1. Introduction: Project Overview and Objectives
 
-This analytical report explores ride fare patterns, pickup/dropoff behavior, and passenger trends based on a dataset of **200,000 Uber rides**.
+This report presents a comprehensive analysis of **200,000 Uber ride records**, focusing on fare patterns, passenger trends, and spatial-temporal behaviors. The analysis aims to derive actionable insights that can inform business decisions and improve operational efficiency.
 
-### Objectives:
+### Key Objectives:
 
-- Understand fare distribution and detect anomalies (outliers)
-- Identify peak seasons and passenger count behavior
-- Offer recommendations for business improvement based on findings
+- Analyze fare distribution and identify pricing anomalies.
+- Detect seasonal and temporal usage trends.
+- Examine passenger count behavior and ride characteristics.
+- Provide data-driven recommendations to optimize services.
 
 ---
 
 ## 2. Methodology: Data Collection and Analysis Approach
 
-- **Dataset:** 200,000 records of Uber ride transactions
-- **Tools Used:** Python (`pandas`, `seaborn`, `matplotlib`), Jupyter Notebook
+### Dataset
+- **Source**: Uber ride transaction data
+- **Size**: 200,000 records
+- **Fields**: Timestamp, passenger count, fare amount, pickup and dropoff coordinates
 
-### Steps Followed:
+### Tools & Technologies
+- **Python Libraries**: `pandas`, `numpy`, `seaborn`, `matplotlib`
+- **Environment**: Jupyter Notebook
 
-- Data cleaning: removed null values, invalid coordinates, and negative fares
-- Statistical analysis: summary statistics, mean/median/std dev, and outlier detection
-- Visual analysis: plotted seasonal and geographical data patterns
-
----
-
-## 3. Analysis: Detailed Findings and Statistical Insights
-
-### Summary Statistics
-
-**Fare Amount:**
-
-- Mean: `$11.36`
-- Median: `$8.50`
-- Standard Deviation: `9.89`
-- Max: `$499.00`
-- Min: `-52.00`
-- Outliers Detected: `17,155`
-
-**Passenger Count:**
-
-- Mean: `1.68`
-- Standard Deviation: `1.38`
-- Max: `208`
-- Min: `0`
-
->  Note: The dataset had extreme outliers, e.g., fares over `$400` and invalid GPS coordinates.
+### Analytical Approach
+1. **Data Cleaning**
+   - Removed null entries and rows with missing values
+   - Filtered out invalid GPS coordinates and negative fare values
+2. **Descriptive Statistics**
+   - Computed measures of central tendency and spread
+   - Identified and flagged extreme outliers
+3. **Exploratory Data Visualization**
+   - Created histograms, box plots, and time series charts
+   - Analyzed seasonal patterns and location-based trends
 
 ---
 
-### Geographical Patterns:
+## 3. Analysis: Key Findings and Statistical Insights
 
-- Most pickup/dropoff locations are clustered in urban areas (likely NYC).
-- Some GPS coordinates were far outside the expected range and flagged as outliers.
+### Fare Amount Statistics
+| Metric         | Value     |
+|----------------|-----------|
+| Mean           | $11.36    |
+| Median         | $8.50     |
+| Std Deviation  | 9.89      |
+| Maximum Fare   | $499.00   |
+| Minimum Fare   | -$52.00   |
+| Outliers Found | 17,155    |
 
----
+> A large number of outliers (e.g., fares over $200 or negative values) indicate potential data quality issues or anomalies.
 
-### Seasonal Trends:
+### Passenger Count Statistics
+| Metric         | Value   |
+|----------------|---------|
+| Mean           | 1.68    |
+| Std Deviation  | 1.38    |
+| Maximum Count  | 208     |
+| Minimum Count  | 0       |
 
-- Clear spike in Uber usage during **Spring** — likely due to better weather, tourism, and outdoor activities.
-
----
-
-## 4. Results: Key Discoveries and Patterns
-
-- Fare distribution is **right-skewed**, with most rides under **$20**.
-- Majority of rides had **1 or 2 passengers**.
-- Multiple outliers were found in fare amounts and coordinates.
-- **Spring** season saw a significant surge in demand.
-
----
-
-## 5. Conclusion: Summary of Main Findings
-
-- Average Uber fare is approximately **$11.36**.
-- Most rides involve **1 passenger** and cost under **$20**.
-- **Spring** shows increased Uber usage.
-- Data inconsistencies like **negative fares** and **invalid coordinates** were detected and handled.
+> Most rides had 1 or 2 passengers; extreme values like 208 passengers suggest erroneous data entries.
 
 ---
 
-## 6. Recommendations: Data-Driven Business Suggestions
+### Geospatial Analysis
+- High concentration of rides occurred in urban zones (likely New York City).
+- Several pickup/dropoff coordinates were far outside expected geographic bounds, indicating incorrect or missing GPS data.
 
-- Implement **fare validation** logic to flag extreme fare values (e.g., over `$200`).
-- Apply **stricter coordinate filters** to clean invalid GPS points.
-- Launch **marketing campaigns** in Spring to capitalize on high demand.
-- Optimize car allocation for **1–2 passenger rides**.
-- Use **seasonal trends** for demand forecasting and fleet management.
+### Temporal and Seasonal Trends
+- Ride volume increased significantly during **Spring**, suggesting a seasonal surge driven by favorable weather, tourism, or events.
+- Weekly and hourly patterns showed peak usage during **evenings and weekends**.
 
 ---
+
+## 4. Results: Summary of Discoveries
+
+- The **fare distribution is right-skewed**, with most rides costing under $20.
+- The **majority of trips involved one passenger**, reinforcing the demand for compact rides.
+- **Spring** showed a marked increase in ride activity.
+- Numerous outliers were found in fare values and geographic data, which required special handling.
+
+---
+
+## 5. Conclusion: Summary of Key Insights
+
+- Average Uber fare: **$11.36**
+- Most frequent ride configuration: **1 passenger, under $20**
+- Seasonal peak: **Spring**
+- Key data issues: **Outliers, negative fares, and invalid coordinates**
+
+Despite some data quality concerns, the dataset revealed consistent patterns that can inform business strategy, particularly regarding ride demand and pricing optimization.
+
+---
+
+## 6. Recommendations: Data-Driven Business Actions
+
+1. **Fare Validation System**
+   - Automatically flag and review fares exceeding $200 or below $0.
+
+2. **GPS Data Filtering**
+   - Integrate stricter geofencing or location validation to eliminate invalid coordinates.
+
+3. **Seasonal Campaign Planning**
+   - Allocate more marketing and ride availability during Spring to meet increased demand.
+
+4. **Fleet Optimization**
+   - Tailor vehicle supply to cater to solo and pair rides, which constitute the majority.
+
+5. **Predictive Modeling**
+   - Leverage seasonal and hourly trends to forecast ride demand and adjust pricing dynamically.
+
+---
+
+### 📎 Appendix (Optional Additions)
+- Sample visualizations: Histograms, box plots, time series
+- DAX formulas (if extended with Power BI)
+- Screenshots of Jupyter Notebooks and Dashboard
+
