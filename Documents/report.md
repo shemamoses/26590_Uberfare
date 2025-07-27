@@ -112,8 +112,5 @@ Despite some data quality concerns, the dataset revealed consistent patterns tha
 
 ---
 
-### 📎 Appendix (Optional Additions)
-- Sample visualizations: Histograms, box plots, time series
-- DAX formulas (if extended with Power BI)
-- Screenshots of Jupyter Notebooks and Dashboard
+Prepared by SHEMA Moses 26590
 
