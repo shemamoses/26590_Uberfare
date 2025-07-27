@@ -1,73 +1,61 @@
-# 🚖 Uber Fares Dataset Analysis with Power BI Project structure
+# 🚖 Uber Fares Data Analysis with Power BI
 
-## Data folder
+This project explores Uber fare data through comprehensive analysis and visualization using Power BI and Python. It follows a structured workflow from raw data preprocessing to final dashboard creation for business intelligence insights.
 
-In data there's 
-1. cleaned data :Stores the dataset after data quality improvements and preprocessing.
-2. Enhanced data: Final dataset with all engineered features ready for Power BI analysis.
-3. Raw data : Contains the original, unmodified dataset exactly as downloaded from Kaggle.
+---
 
-## Docs folder
-1. Dashboard screenshot
-2. Report : the description ,project overview ,methodology used, etc all are found in report.md
+## 📁 Project Structure
 
-## Notebooks folder
-1.Data_analysis file : a python that shows data how data were analysed
+### `data/`  
+Contains various stages of the dataset used in the analysis:
 
-2.Summary statistics: a screenshot that shows the mean fare,median fare ,standard deviation and outliers.
+- **Raw Data**: The original dataset as downloaded from Kaggle, with no modifications.  
+- **Cleaned Data**: Dataset after preprocessing and data quality improvements.  
+- **Enhanced Data**: Final version of the dataset with all engineered features, ready for Power BI integration.
 
-## PowerBI/Screenshots folder
-it contains all screenshots about :
+---
 
-1.Time series analysis
+### `documents/`  
+Project-related documentation and visuals:
 
-2.Time based visualization
+- **Dashboard Screenshot**: A preview of the final Power BI dashboard.  
+- **Report (`report.md`)**: Includes project overview, methodology, insights, and conclusions.
 
-3.Boxplot
+---
 
-4.Busiest month
+### `notebooks/`  
+Python notebooks and visuals used during the data exploration phase:
 
-5.Histogram
+- **`data_analysis.ipynb`**: Jupyter notebook showcasing data exploration and preprocessing steps.  
+- **Summary Statistics**: Image displaying key descriptive statistics (mean, median, standard deviation, outliers).
 
-6.Fare_day
+---
 
-7.Fare_hour
+### `powerbi/`  
+Screenshots of individual visualizations used in the Power BI dashboard:
 
-8.Fare_week
+- Time Series Analysis  
+- Time-based Visualizations  
+- Boxplot  
+- Busiest Month  
+- Histogram  
+- Fare by Day  
+- Fare by Hour  
+- Fare by Week  
+- Monthly Fare Trends  
+- Fare Distribution  
+- Rides by Day  
+- Rides by Hour  
+- Rides by Weekday  
+- Seasonal Trends  
 
-9.Fare_monthly
+---
 
-10.Fare_distribution
+### `dashboard/`  
+- **Uber_Fare_Analysis.pbix**: The Power BI Dashboard file containing all visuals and insights.
 
-11.Rides_day
-
-12.Rides_hour
-
-13.Rides_weekdays
-
-14.Seasonal trends
-
-## Dashboard
-Power BI Dashboard File (.pbix)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## License
+---
+Prepared by SHEMA Moses 26590
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
